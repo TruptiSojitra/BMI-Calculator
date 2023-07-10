@@ -1,0 +1,300 @@
+body{
+    background-color:#dce5ec;
+    margin: block;
+    
+}
+.div1{
+ background-color: #f1f5f9ab;
+ border-radius: 10px;
+ /* margin: 50px; */
+ display: flex;
+ /* padding: 40px; */
+ /* background-color: red; */
+}
+.left{
+    width: 12%;
+    background-color: white;
+    border-radius: 10px 0px 0px 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+.left h6{
+    color: cornflowerblue;
+}
+.left i{
+    color: cornflowerblue;
+    font-size: 25px;
+    margin: 5px;
+    padding: 15px;
+    border-radius: 10px;
+    background-color:#f1f5f9ab;
+}
+.left img{
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    border-radius: 10px;
+}
+
+.right{
+    display: flex;
+}
+
+.calculator{
+    width: 25%;
+    height: 70%;
+    padding: 20px;
+
+}
+
+.div2{
+    display: flex;
+    flex-direction: column;
+}
+.div2 label{
+    margin-top: 10px;
+}
+.div2 input{
+    margin: 10px;
+    /* width: 80%; */
+    text-align: center;
+    border-style: groove;
+    border-radius: 10px;
+    border-color: #f1f5f9ab;
+    background-color: #f1f5f9ab ;
+}
+.calculator p{
+    font-size: 15px;
+    width: 200px;
+    font-weight: 700;
+    padding: 0px 15px;
+    background-color: white;
+    border-radius: 10px;
+    color: cornflowerblue;
+}
+hr{
+    width: 200px;
+    margin: 10px;
+}
+button{
+    width: 190px;
+    text-align: center;
+    border-radius: 10px;
+    border-color: cornflowerblue;
+    background-color: cornflowerblue;
+}
+
+.container{
+    width: 68%;
+    display: block;
+}
+.top{
+    display: flex;
+}
+
+.bottom{
+    background-color: #ffffffbc;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 5px;
+}
+#calender {
+    width: 30%;
+    height: 20%;
+    background-color: white;
+    border-radius: 10px;
+    margin-top: 50px;
+    padding: 10px 0px 10px 30px;  
+    /* float: left;  */
+}
+
+
+
+#summary {
+    width: 70%;
+    height: 20%;
+    background-color: white;
+    border-radius: 10px;
+    margin: 50px 10px 10px 10px;
+    padding: 20px;
+}
+#appointments{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+#reports{
+    display: flex;
+}
+.item{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 10px;
+    border-color: cornflowerblue;
+    align-items: center;
+    background-color: white;
+
+}
+
+
+    .item-title{
+    font-weight: bold;
+    font-size: 15px;
+   }
+   .item-status{
+    font-size: 15px;
+    
+   }
+   .item i{
+    color: cornflowerblue;
+    background-color:#f1f5f9ab;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: x-large;
+   }
+
+.item1{
+    width: 50%;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 10px;
+    border-color: cornflowerblue;
+    align-items: center;
+    background-color: white;
+}
+    .item1-title{
+    font-weight: bold;
+    font-size: 15px;
+    padding: 5px;
+   }
+   .item1-status{
+    font-size: 15px;
+    
+   }
+ .wrap{
+    width: 40%;
+    display: inline-block;
+ }
+   .progress{
+    position: relative;
+    width: 100%;
+    background-color: #aaaaaa;
+    height: 10px;
+    display: inline-block;
+   }
+   .progress-complete{
+    position: absolute;
+    width: 70%;
+    height: 100%;
+    background-color: cornflowerblue;
+   }
+   
+   @media screen and (max-width: 992px) {
+    body{
+        background-color: gray;
+    }
+    /* .div1{
+        
+    } */
+
+    .left{
+        /* display: block; */
+        width: 20%;
+        height: auto;
+    }
+    .right{
+        width: 80%;
+        flex-direction: column;
+    }
+
+   
+    .calculator{
+        display: flex;
+        flex-direction: column;
+        width:100%;
+        height: 50%;
+        align-items: center;
+    }
+
+    #calender {
+        /* font-size: 15px; */
+        padding: 10px 0px 10px 30px; 
+        /* padding: 20px; */
+        width: 40%;
+    }
+    /* #calender i{
+        font-size:9px;
+    } */
+
+    #summary{
+        width: 60%;
+    }
+    /* .div2 input{
+        width: 40%;
+    } */
+    .container{
+        width: 100%;
+    }
+   }
+
+
+   @media screen and (max-width: 576px) {
+
+    body{
+        background-color: cornflowerblue;
+    }
+
+    .calculator{
+        width: 100%;
+    }
+    
+    button{
+        width: auto;
+    }
+
+    .item{
+        padding: 2px;
+    }
+
+    #appointments{
+        width: 80%;
+
+    }
+    .item-title{
+        /* font-weight: bold; */
+        font-size: 10px;
+        padding: 5px;
+       }
+       .item-status{
+        font-size: 10px;
+        
+       }
+
+    #calender {
+        /* font-size: 15px; */
+        padding: 20px;
+        width: 50%;
+    }
+    #calender i{
+        font-size:9px;
+    }
+
+    #summary{
+        width: 50%;
+    }
+    #summary p{
+        font-size: 9px;
+    }
+    h5{
+        font-size: small;
+    }
+       
+   }
